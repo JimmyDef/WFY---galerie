@@ -3,95 +3,82 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   background-color: rgba(238, 229, 215, 0.404);
   width: 900px;
-  margin: auto;
-}
+  margin: auto; }
 
 section {
   margin: 50px auto;
   border: black solid 3px;
-  padding: 20px;
-}
+  padding: 20px; }
 
 h1 {
   margin-top: 50px;
-  font-size: 40px;
-}
+  font-size: 40px; }
 
 i {
   font-size: 50px;
-  cursor: grab;
-}
-i:active {
-  transform: scale(0.9);
-  transition: all 250ms;
-}
+  cursor: grab; }
+  i:active {
+    transform: scale(0.9);
+    transition: all 250ms; }
 
 .player {
   width: 800px;
-  margin: auto;
-}
-.player__slides {
-  margin: 150px auto 50px;
-  width: 700px;
-  background-color: antiquewhite;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.player__picture {
-  background-color: beige;
-  width: 350px;
-  height: 300px;
-}
-.player__picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.player__picture img.glow {
-  animation: showUp 1s;
-}
-.player__commands {
-  width: 50%;
-  display: flex;
-  margin: auto;
-  background-color: aliceblue;
-}
-.player__commands i {
-  margin: auto;
-}
+  margin: auto; }
+  .player__slides {
+    margin: 150px auto 50px;
+    width: 700px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .player__picture {
+    background-color: beige;
+    width: 350px;
+    height: 300px; }
+    .player__picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+      .player__picture img.glow {
+        animation: showUp 1s; }
+  .player__commands {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    background-color: aliceblue; }
+    .player__commands i {
+      margin: auto; }
 
 @keyframes showUp {
   0% {
-    opacity: 0;
-  }
+    opacity: 0; }
   100% {
-    opacity: 1;
-  }
-}
+    opacity: 1; } }
+.hide {
+  opacity: 0; }
+
 #tabs > div {
   display: none;
   padding: 20px;
-  height: 100px;
+  height: 100%;
+  overflow-x: auto;
+  transition: all .5s;
   width: 70%;
   background: blanchedalmond;
   border: solid black 2px;
-}
+  margin: auto; }
 
 #tabs > div.active {
   display: block;
-  color: blueviolet;
-}
+  color: blueviolet; }
 
 ul {
-  margin-left: 100px;
-}
+  margin-left: 100px; }
 
 ul li {
   padding: 20px 0;
@@ -104,15 +91,12 @@ ul li {
   border: solid black 2px;
   background: grey;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 ul li:hover {
-  background: blueviolet;
-}
+  background: blueviolet; }
 
 ul li.active {
-  background: blueviolet;
-}
+  background: blueviolet; }
 
 /*# sourceMappingURL=style.css.map */

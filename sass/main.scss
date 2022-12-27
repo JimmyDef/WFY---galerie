@@ -73,14 +73,19 @@ i {
     opacity: 1;
   }
 }
-
+.hide {
+  opacity: 0;
+}
 #tabs > div {
   display: none;
   padding: 20px;
-  height: 100px;
+  height: 100%;
+  overflow-x: auto;
+  transition: all .5s;
   width: 70%;
   background: blanchedalmond;
   border: solid black 2px;
+  margin: auto;
 }
 #tabs > div.active {
   display: block;
