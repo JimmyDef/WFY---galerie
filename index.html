@@ -9,15 +9,14 @@
     <title></title>
   </head>
   <body>
-    <main class="player">
+    <section class="player">
       <h1>Player Diapo</h1>
 
       <div class="player__slides">
         <i class="fa-solid fa-circle-chevron-left"></i>
         <div class="player__picture">
           <img
-            id="tunnel"
-            class="glow"
+            id="photo"
             src="./public/img/choupi1.jpeg"
             alt="Photo d'un chat blanc et gris"
           />
@@ -28,7 +27,35 @@
         <i class="fa-solid fa-pause"></i>
         <i class="fa-solid fa-play"></i>
       </div>
-    </main>
+    </section>
+
+    <section class="onglets">
+      <ul>
+        <li data-tabtitle="0" class="active">Titre 1</li>
+        <li data-tabtitle="1">Titre 2</li>
+        <li data-tabtitle="2">Titre 3</li>
+      </ul>
+      <div id="tabs">
+        <div id="tab0" class="active">
+          Text 1 : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+          veritatis amet temporibus distinctio saepe ipsam, quasi, maxime
+          mollitia eos velit maiores apraesentium doloremque voluptates aperiam!
+          Natus, fugit odit! Iure pocusandae, quaerat quidem quis!
+        </div>
+        <div id="tab1">
+          Text 2 : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+          veritatis amet tempo Natus, fugit odit! Iure pocusandae, quaerat
+          quidem quis!
+        </div>
+        <div id="tab2">
+          Text 3 : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+          veritatis amet temporibus distinctio saepe ipsam, quasi, maxime
+          mollitia eos velit maiores ab dolore? Neque ea, voluptatum eum
+          providlitia fugit rem dolorem placemque voluptates aperiam! Natus,
+          fugit odit! Iure pocusandae, quaerat quidem quis!
+        </div>
+      </div>
+    </section>
     <script
       src="https://kit.fontawesome.com/6fecdd9ab9.js"
       crossorigin="anonymous"
